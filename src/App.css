@@ -1,0 +1,139 @@
+body {
+  background-color: #f3f2f2;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 1rem;
+  margin-top: 2rem ;
+}
+
+.accordion-item {
+  background-color: white;
+  /* border: 2px solid #ccc; */
+  border-radius: 20px;
+  margin: 1.5rem;
+  padding: 1rem;
+}
+
+.accordion-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 150px;
+}
+
+.accordion-item button {
+  background-color: red;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 20px;
+  color: white;
+}
+
+.accordion-content {
+  /* border: 1px solid #ccc; */
+  margin: auto;
+  width: 95%;
+  border-radius: 20px;
+  padding: 1.5rem;
+  margin-top: 15px;
+  box-shadow: 0.1px 0.1px 5px #ccc;
+}
+
+.title {
+  min-width: 200px;
+  font-weight: bolder;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.company-title {
+  min-width: 200px;
+}
+
+.detail-container {
+  display: flex;
+}
+.detail-container section {
+  min-width: 500px;
+}
+
+.accordion-content p {
+  margin: 0.4rem;
+}
+
+.description {
+  margin-bottom: 1.8rem;
+}
+
+.pagination {
+  margin: auto;
+  width: fit-content;
+}
+
+.pagination ul {
+  display: flex;
+  list-style: none;
+  cursor: pointer;
+}
+
+.pagination ul li {
+  list-style: none;
+  cursor: pointer;
+  /* border: 2px solid #ccc; */
+  /* padding: 0.2rem 0.6rem; */
+}
+
+.page-link:hover {
+  background-color: rgb(238, 134, 134);
+}
+
+.page-link {
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 2px;
+}
+
+.page-link-active {
+  background-color: red;
+  color: white;
+}
+.direction {
+  font-weight: bolder;
+  border: none;
+}
+.direction:hover {
+  color: rgb(238, 134, 134);
+}
+
+@media (max-width: 980px) {
+  .accordion-title {
+    display: block;
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+  }
+  .company-title {
+    min-width: 0px;
+  }
+  .title {
+    min-width: 0px;
+  }
+  .detail-container section {
+    min-width: 0;
+  }
+  .accordion-title div {
+    margin: 0.5rem;
+  }
+  .accordion-content {
+    width: 80%;
+  }
+  .accordion-item button {
+    padding: 0.5rem 1rem;
+    margin-top: 0.5rem;
+  }
+  .detail-container {
+    display: block;
+  }
+  p {
+    display: inline;
+  }
+}
